@@ -1,6 +1,7 @@
 // main.js
 
-import { createApp } from '/js/vue.esm-browser.prod.js'
+// import { createApp } from '/js/vue.esm-browser.prod.js'
+import { createApp } from 'vue'
 import vMainWrapper from "./components/v-main-wrapper.js"
 
 
