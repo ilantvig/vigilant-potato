@@ -1,0 +1,372 @@
+/* 
+  background patterns
+    https://heropatterns.com/ 
+
+*/
+
+@media (prefers-color-scheme: light) {
+  body {
+    /* background: #fff; */
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23eeeeee' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 10px;
+    background-attachment: fixed;
+    color: #333;
+  }
+
+  .build tr {
+    background-color: #eee;
+  }
+
+  .exotic,
+  .gearset,
+  .named,
+  .brandset {
+    outline: 1px solid #333;
+    outline-offset: -1px;
+  }
+
+  /* .exotic:hover,
+  .gearset:hover,
+  .named:hover,
+  .brandset:hover {
+    outline: 2px solid #444;
+    outline-offset: -2px;
+  } */
+
+  .box-lime {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #85ff85;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #85ff8585;
+  }
+
+  .box-gray {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #aaaaaacc;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    /* background: #222; */
+    color: #ddd;
+    background-color: #111111;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23222222' fill-opacity='0.6' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 12px;
+    background-attachment: fixed;
+
+  }
+
+  .build tr {
+    background-color: #444;
+  }
+
+  .exotic,
+  .gearset,
+  .named,
+  .brandset {
+    outline: 1px solid lightgray;
+    outline-offset: -1px;
+  }
+
+  /* .exotic:hover,
+  .gearset:hover,
+  .named:hover,
+  .brandset:hover {
+    outline: 2px solid white;
+    outline-offset: -2px;
+  } */
+
+  .box-lime {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #006600;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #006600cc;
+  }
+
+  .box-gray {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #666666;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #666666cc;
+  }
+}
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */
+
+
+
+
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-button-group {
+  float: right;
+}
+
+.modal-button-group > button + button {
+  margin-left: 1.5ex;
+}
+
+button + button {
+  margin-left: 1.5ex;
+}  
+
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter-from {
+  opacity: 0;
+}
+
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-from .modal-container,
+.modal-leave-to .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/*
+  Enter and leave animations can use different
+  durations and timing functions.
+*/
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+
+
+.v-main-wrapper {
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+
+.v-gear {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.v-gear-item:hover {
+  outline: 2px solid white;
+}
+
+.v-gear-item {
+  /* flex-basis: 45%; */
+  /* box-shadow: 0 0 8px 0 #e0e0e0; */
+  padding: 4px 2px 4px 4px;
+  /* padding-right: 2px; */
+  margin: 4px;
+
+  /* min-width: 300px; */
+  width: 300px;
+
+  border-radius: 8px;
+    
+  display: flex;
+  /* flex-direction: column; */
+
+  /* justify-content: center;
+  align-items: center; */
+  /* max-width: 200px; */
+  /* margin: 0 auto; */
+  /* border: 1px solid rgb(221, 101, 2); */
+}
+
+
+  /* ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====  */
+
+  .exotic {
+    border-left: 10px solid rgb(255, 99, 55);
+    border-right: 2px solid rgb(255, 99, 55);
+    background-image: linear-gradient(to right,
+    rgba(255, 99, 55, 0.4),
+    rgba(255, 99, 55, 0.1));
+  }
+  .exotic:hover {
+    border-left: 10px solid rgb(255, 99, 55);
+    border-right: 2px solid rgb(255, 99, 55);
+    background-image: linear-gradient(to right,
+    rgba(255, 99, 55, 0.6),
+    rgba(255, 99, 55, 0.3));
+  }
+  
+  .gearset {
+    border-left: 10px solid rgb(1, 255, 144);
+    border-right: 2px solid rgb(1, 255, 144);
+    background-image: linear-gradient(to right,
+    rgba(1, 255, 144, 0.4),
+    rgba(1, 255, 144, 0.1));
+  }
+  .gearset:hover {
+    border-left: 10px solid rgb(1, 255, 144);
+    border-right: 2px solid rgb(1, 255, 144);
+    background-image: linear-gradient(to right,
+    rgba(1, 255, 144, 0.6),
+    rgba(1, 255, 144, 0.3));
+  }
+
+  .named,
+  .brandset {
+    border-left: 10px solid rgb(255, 175, 16);
+    border-right: 2px solid rgb(255, 175, 16);
+    background-image: linear-gradient(to right,
+        rgba(255, 175, 16, 0.4),
+        rgba(255, 175, 16, 0.1));
+  }    
+  .named:hover,
+  .brandset:hover {
+    border-left: 10px solid rgb(255, 175, 16);
+    border-right: 2px solid rgb(255, 175, 16);
+    background-image: linear-gradient(to right,
+        rgba(255, 175, 16, 0.6),
+        rgba(255, 175, 16, 0.3));
+  }    
+
+  .named-text {
+    color: rgb(255, 175, 16);
+  }
+
+  .exotic-text {
+    color: rgb(253, 98, 55);
+  }
+
+  .gearset-text {
+    color: rgb(1, 255, 144);
+  }
+
+
+  img.stat-icon {
+    height: 1em;
+    margin-bottom: 0.2em;
+    /* margin-right: 4px; */
+    vertical-align: middle;
+  }  
+
+
+  div.gear-card {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 64px;
+    /* text-align: left; */
+    padding-left: 68px;
+    /* margin-left: 4px; */
+    min-height: 70px;
+    /* cursor: pointer; */
+  }
+
+  div.bg-mask {
+    background-image: url("./images/icons/mask.png");
+  }
+
+  div.bg-backpack {
+    background-image: url("images/icons/backpack.png");
+  }
+
+  div.bg-chest {
+    background-image: url("images/icons/chest.png");
+  }
+
+  div.bg-gloves {
+    background-image: url("images/icons/gloves.png");
+  }
+
+  div.bg-holster {
+    background-image: url("images/icons/holster.png");
+  }
+
+  div.bg-kneepads {
+    background-image: url("images/icons/kneepads.png");
+  }
+
+  div.gear-title {
+    font-weight: bold;
+  }
+
+
+  div.stat {
+    border-radius: 5px;
+  }
+  div.stat:hover {
+    outline: 2px solid red;
+    cursor: pointer;
+    /* outline-offset: 1px; */
+  }
+
